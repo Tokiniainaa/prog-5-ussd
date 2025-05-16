@@ -1,7 +1,11 @@
 package org.example;
 
+import ussd.service.MainMenuService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MainMenuService mainMenuService = new MainMenuService();
+        mainMenuService.showMenuYasEtMvola();
+
     }
 }

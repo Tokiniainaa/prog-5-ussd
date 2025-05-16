@@ -2,6 +2,7 @@ package ussd.model;
 
 public class Mvola {
     public void mvolaFirstMenu(){
+        System.out.println("MVOLA");
         System.out.println("1 Acheter Crédit ou Offre Yas");
         System.out.println("2 Transférer argent (vers toute destination)");
         System.out.println("3 MVola Crédit ou Épargne");
@@ -10,6 +11,7 @@ public class Mvola {
         System.out.print("Choisissez une option : ");
     }
     public void mvolaNextMenu(){
+        System.out.println("MVOLA");
         System.out.println("5 Paiement Factures & Partenaires");
         System.out.println("6 Mon compte");
         System.out.println("7 Recevoir de l'argent");

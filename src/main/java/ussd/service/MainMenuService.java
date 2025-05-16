@@ -11,6 +11,7 @@ public class MainMenuService {
     private final InvalidChoice invalidChoice = new InvalidChoice();
     private final MvolaService mvolaService = new MvolaService();
     private final  RappelleMoiService rappelleMoiService = new RappelleMoiService();
+    private final SosCreditService sosCreditService = new SosCreditService();
 
 
     public void showMenuYasEtMvola () {
@@ -30,7 +31,7 @@ public class MainMenuService {
                     rappelleMoiService.displayMenuRappelleMoi();
                     break;
                 case "3":
-                    System.out.println("Service SOS Crédit...");
+                    sosCreditService.displayMenuSosCredit();
                     break;
                 case "4":
                     System.out.println("Accès aux services YAS...");

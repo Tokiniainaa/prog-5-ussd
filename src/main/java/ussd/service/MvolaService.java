@@ -11,7 +11,6 @@ public class MvolaService {
     private final Mvola mvola=new Mvola();
 
     public void displayMenuMvola(int page) {
-        System.out.println("MVOLA");
         if (page == 1) {
             mvola.mvolaFirstMenu();
         } else if (page == 2) {
