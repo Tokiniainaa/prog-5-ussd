@@ -25,8 +25,6 @@ displayMenuSosCredit, showMenuServiceYas
 
 camelCase
 
-Clear, descriptive names
-
 Examples:
 
 invalidChoice, page
@@ -34,8 +32,6 @@ invalidChoice, page
 ✅ Packages
 
 lowercase, avoid underscores
-
-Use reverse-domain naming if applicable
 
 Examples:
 
@@ -68,7 +64,7 @@ mvn checkstyle:check
 #### In IntelliJ IDEA:
 Go to Settings → Plugins, search for Checkstyle-IDEA, install it and restart IntelliJ.
 
-### Configure the plugin:
+##### Configure the plugin:
 
 -Go to Settings → Tools → Checkstyle
 
