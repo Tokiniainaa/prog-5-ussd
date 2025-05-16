@@ -1,45 +1,62 @@
-# PROG-5-USSD
-This project simulates a USSD (Unstructured Supplementary Service Data) interface 0f Mvola and YAS.
-It is developed in Java with maven, aims to reproduce a USSD menu system with multiple pages and options.
+# 🚀 PROG-5-USSD
 
-## Naming Conventions
-To ensure consistency, this project follows standard Java naming conventions:
+This project simulates a USSD (Unstructured Supplementary Service Data) interface similar to Mvola and YAS.  
+It is developed in **Java** using **Maven**, and aims to reproduce a USSD menu system with multiple pages and interactive options.
 
-✅ Classes\
-PascalCase \
-Examples: InvalidChoice
+---
 
-✅ Methods\
-camelCase \
-Examples: displayMenuSosCredit
+## ✍️ Naming Conventions
 
-✅ Variables\
-camelCase\
-Examples: invalidChoice
+To ensure consistency, the project follows standard Java naming conventions:
 
-✅ Packages\
-lowercase, avoid underscores\
-Examples: ussd.model
+| Type        | Convention              | Example                |
+|-------------|-------------------------|------------------------|
+| ✅ Classes   | `PascalCase`            | `InvalidChoice`        |
+| ✅ Methods   | `camelCase`             | `displayMenuSosCredit` |
+| ✅ Variables | `camelCase`             | `invalidChoice`        |
+| ✅ Packages  | lowercase (no `_`)      | `ussd.model`           |
 
-## Code Style and Linting
-This project uses Checkstyle to enforce coding standards.\
-Checkstyle Configuration: A custom checkstyle.xml file is used to define the style rules, such as:
-Naming conventions , Javadoc presence , Indentation ,... \
-The configuration is based on the Google Java Style Guide.
+---
 
-### How to Run Checkstyle
-Using a build tool, we can  run Checkstyle via command line :
+## 🎯 Code Style and Linting
+
+This project uses **Checkstyle** to enforce coding standards.  
+A custom `checkstyle.xml` file is used to define the rules, including:
+
+- Naming conventions
+- Presence of Javadoc comments
+- Indentation
+- And more...
+
+The configuration is based on the **Google Java Style Guide**.
+
+---
+
+### 🔧 How to Run Checkstyle
+
+You can run Checkstyle from the command line using Maven:
 
 ```bash
 mvn checkstyle:check
 ```
 
-📝 Note: 
-- Maven  must be installed and configured to use these commands.
- 
-- We can also use Checkpoint IDEA
 
-#### Any code style violations will be shown in the Checkstyle Results tool window with line numbers and rule names.
+📝 **Note**:
+- **Maven** must be installed and properly configured on your machine to use the command above.
+- You can also use the **Checkstyle plugin** available in **IntelliJ IDEA** (or other supported IDEs) to run checks directly within the editor.
+
+---
+
+### 🧪 Viewing Checkstyle Violations
+
+Any code style violations will be displayed in the **Checkstyle Results** tool window, along with:
+
+- The **line number** where the issue occurs
+- The **type of rule** that was violated
+- A **description** of the problem
+
+---
 
 ### 🔥 Example of a Violation
-"Commentaire Javadoc manquant. (8:1) [MissingJavadocType] <Google Checks>"
+
+Missing Javadoc comment. (8:1) [MissingJavadocType] <Google Checks>
