@@ -12,9 +12,9 @@ public class MvolaService {
 
     public void displayMenuMvola(int page) {
         if (page == 1) {
-            mvola.mvolaFirstMenu();
+            mvola.showMvolaFirstMenu();
         } else if (page == 2) {
-            mvola.mvolaNextMenu();
+            mvola.showMvolaNextMenu();
         }
         handleChoice(scanner.nextLine(), page);
     }

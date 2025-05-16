@@ -14,6 +14,7 @@ public class MainMenuService {
     private final SosCreditService sosCreditService = new SosCreditService();
     private final ServiceYasService serviceYasService = new ServiceYasService();
     private final PromotionService promotionService = new PromotionService();
+    private final MonIdentiteService monIdentiteService = new MonIdentiteService();
 
 
     public void showMenuYasEtMvola () {
@@ -48,7 +49,7 @@ public class MainMenuService {
                     System.out.println("Banques et Micro-Finances...");
                     break;
                 case "8":
-                    if (page == 2) System.out.println("Mon identité...");
+                    if (page == 2) monIdentiteService.displayMonIdentite();
                     else System.out.println("Option invalide sur cette page.");
                     break;
                 case "9":
