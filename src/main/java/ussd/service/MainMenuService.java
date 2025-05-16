@@ -25,7 +25,7 @@ public class MainMenuService {
             } else if (page == 2) {
                 mainMenu.nextPage();
             }
-            String choice = TimeOutInput.getUserInputWithTimeout(20);
+            String choice = TimeOutInput.getUserInputWithTimeout(25);
             if (choice == null) {
                 System.exit(0);
             }
