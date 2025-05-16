@@ -1,23 +1,26 @@
 package ussd.service;
 
+import java.util.Scanner;
+
 import ussd.model.InvalidChoice;
 import ussd.model.MainMenu;
 
-import java.util.Scanner;
 
 public class MainMenuService {
     private final MainMenu mainMenu = new MainMenu();
-    private  final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
     private final InvalidChoice invalidChoice = new InvalidChoice();
     private final MvolaService mvolaService = new MvolaService();
-    private final  RappelleMoiService rappelleMoiService = new RappelleMoiService();
+    private final RappelleMoiService rappelleMoiService = new RappelleMoiService();
     private final SosCreditService sosCreditService = new SosCreditService();
     private final ServiceYasService serviceYasService = new ServiceYasService();
     private final PromotionService promotionService = new PromotionService();
     private final MonIdentiteService monIdentiteService = new MonIdentiteService();
 
+    private final ConfigMobileService configMobileService = new ConfigMobileService();
 
-    public void showMenuYasEtMvola () {
+
+    public void showMenuYasEtMvola() {
         int page = 1;
         while (true) {
             if (page == 1) {
@@ -57,7 +60,7 @@ public class MainMenuService {
                     else System.out.println("Option invalide sur cette page.");
                 }
                 case "9" -> {
-                    if (page == 2) System.out.println("Configurer mon mobile...");
+                    if (page == 2) configMobileService.displayConfigMobile();
                     else System.out.println("Option invalide sur cette page.");
                 }
                 case "0" -> page = 2;
