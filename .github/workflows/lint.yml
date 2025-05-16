@@ -20,3 +20,5 @@ jobs:
 
       - name: Run Maven Checkstyle
         run: mvn clean validate
+      - name: Lancer Checkstyle
+        run: mvn checkstyle:check
