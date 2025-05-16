@@ -82,11 +82,15 @@ Select: Checkstyle → Check Code with Checkstyle
 If you're using a build tool, you can also run Checkstyle via command line:
 
 With Maven:
+
 mvn checkstyle:check
 
 With Gradle:
+
 ./gradlew checkstyle
+
 📝 Note: Maven or Gradle must be installed and configured to use these commands.
+
 Any code style violations will be shown in the Checkstyle Results tool window with line numbers and rule names.
 
 ### 🔥 Example of a Violation
