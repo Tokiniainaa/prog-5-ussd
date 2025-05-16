@@ -1,6 +1,6 @@
-# prog-5-ussd
+# PROG-5-USSD
 This project simulates a USSD (Unstructured Supplementary Service Data) interface 0f Mvola and YAS.
-It is developed in Java, aims to reproduce a USSD menu system with multiple pages and options.
+It is developed in Java with maven, aims to reproduce a USSD menu system with multiple pages and options.
 
 ## Naming Conventions
 To ensure consistency, this project follows standard Java naming conventions:
@@ -83,11 +83,11 @@ If you're using a build tool, you can also run Checkstyle via command line:
 
 With Maven:
 
-mvn checkstyle:check
+`mvn checkstyle:check`
 
 With Gradle:
 
-./gradlew checkstyle
+`./gradlew checkstyle`
 
 📝 Note: Maven or Gradle must be installed and configured to use these commands.
 
@@ -95,4 +95,5 @@ Any code style violations will be shown in the Checkstyle Results tool window wi
 
 ### 🔥 Example of a Violation
  ."Commentaire Javadoc manquant. (8:1) [MissingJavadocType] <Google Checks>"
+ 
  ."'member def modifier' au niveau d'indentation 4 n'est pas indenté correctement, le niveau attendu est 2. (12:5) [Indentation] <Google Checks>"
