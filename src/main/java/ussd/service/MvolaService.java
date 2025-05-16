@@ -21,16 +21,51 @@ public class MvolaService {
 
     private void handleChoice(String input, int currentPage) {
         switch (input) {
-            case "1" -> System.out.println("Vous avez choisi : Acheter Crédit ou Offre Yas");
-            case "2" -> System.out.println("Vous avez choisi : Transférer argent");
-            case "3" -> System.out.println("Vous avez choisi : MVola Crédit ou Épargne");
-            case "4" -> System.out.println("Vous avez choisi : Retrait d'argent");
+            case "1" -> {
+                if (currentPage == 1)  {System.out.println(" Acheter Crédit ou Offre Yas");
+                displayMenuMvola(1);}
+                else {displayMenuMvola(2);}
+            }
+            case "2" -> {
+                if (currentPage == 1) {System.out.println(" Transférer argent");
+                displayMenuMvola(1);}
+                else {displayMenuMvola(2);}
+            }
+            case "3" -> {
+                if (currentPage == 1) {System.out.println(" MVola Crédit ou Épargne");
+                displayMenuMvola(1);}
+                else {displayMenuMvola(2);}
+            }
+            case "4" -> {
+                if (currentPage == 1) { System.out.println(" Retrait d'argent");
+                    displayMenuMvola(1);
+                } else {displayMenuMvola(2);}
+            }
             case "#" -> displayMenuMvola(2);
-            case "5" -> System.out.println("Vous avez choisi : Paiement Factures & Partenaires");
-            case "6" -> System.out.println("Vous avez choisi : Mon compte");
-            case "7" -> System.out.println("Vous avez choisi : Recevoir de l'argent");
-            case "8" -> System.out.println("Vous avez choisi : Banques et Micro-Finances");
-            case "*" -> displayMenuMvola(1);
+            case "5" -> {
+                if (currentPage == 2) {System.out.println("Paiement Factures & Partenaires");
+                displayMenuMvola(2);}
+                else {displayMenuMvola(1);}
+            }
+            case "6" -> {
+                if (currentPage == 2){System.out.println(" Mon compte");
+                displayMenuMvola(2);}
+                else {displayMenuMvola(1);}
+            }
+            case "7" -> {
+                if (currentPage == 2) {System.out.println(" Recevoir de l'argent");
+                displayMenuMvola(2);}
+                else {displayMenuMvola(1);}
+            }
+            case "8" -> {
+                if (currentPage == 2){System.out.println(" Banques et Micro-Finances");
+                displayMenuMvola(2);}
+                else {displayMenuMvola(1);}
+            }
+            case "*" -> {
+                if (currentPage == 2) displayMenuMvola(1);
+                else {displayMenuMvola(2);}
+            }
             case "**" -> {
                 if (currentPage == 2) {
                     new MainMenuService().showMenuYasEtMvola();

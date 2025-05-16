@@ -25,46 +25,44 @@ public class MainMenuService {
             } else if (page == 2) {
                 mainMenu.nextPage();
             }
-            String choice = scanner.nextLine();
+            String choice = TimeOutInput.getUserInputWithTimeout(20);
+            if (choice == null) {
+                System.exit(0);
+            }
+
             switch (choice) {
-                case "1":
-                    mvolaService.displayMenuMvola(1);
-                    break;
-                case "2":
-                    rappelleMoiService.displayMenuRappelleMoi();
-                    break;
-                case "3":
-                    sosCreditService.displayMenuSosCredit();
-                    break;
-                case "4":
-                   serviceYasService.showMenuServiceYas();
-                    break;
-                case "5":
-                    promotionService.displayMenuPromotion();
-                    break;
-                case "6":
-                    System.out.println("Produits et divertissement...");
-                    break;
-                case "7":
-                    System.out.println("Banques et Micro-Finances...");
-                    break;
-                case "8":
+                case "1" -> {
+                    if (page == 1) mvolaService.displayMenuMvola(1);
+                }
+                case "2" -> {
+                    if (page == 1) rappelleMoiService.displayMenuRappelleMoi();
+                }
+                case "3" -> {
+                    if (page == 1) sosCreditService.displayMenuSosCredit();
+                }
+                case "4" -> {
+                    if (page == 1) serviceYasService.showMenuServiceYas();
+                }
+                case "5" -> {
+                    if (page == 1) promotionService.displayMenuPromotion();
+                }
+                case "6" -> {
+                    if (page == 1) System.out.println("Produits et divertissement...");
+                }
+                case "7" -> {
+                    if (page == 1) System.out.println("Banques et Micro-Finances...");
+                }
+                case "8" -> {
                     if (page == 2) monIdentiteService.displayMonIdentite();
                     else System.out.println("Option invalide sur cette page.");
-                    break;
-                case "9":
+                }
+                case "9" -> {
                     if (page == 2) System.out.println("Configurer mon mobile...");
                     else System.out.println("Option invalide sur cette page.");
-                    break;
-                case "0":
-                    page=2;
-                    break;
-                case "00":
-                    showMenuYasEtMvola();
-                    break;
-
-                default:
-                    invalidChoice.invalidChoice();
+                }
+                case "0" -> page = 2;
+                case "00" -> showMenuYasEtMvola();
+                default -> invalidChoice.invalidChoice();
             }
         }
 
