@@ -7,23 +7,37 @@ The project is ideal for learning menu-driven console applications.
 To ensure consistency, this project follows standard Java naming conventions:
 
 ✅ Classes
+
 PascalCase (each word starts with a capital letter)
+
 Examples:
-InvalidChoice,RapelleMoi,ServiceYas
+
+InvalidChoice, RapelleMoi, ServiceYas
 
 ✅ Methods
-camelCase (starts with a lowercase letter, then capital letters for new words)
-Examples:
-displayMenuSosCredit,showMenuServiceYas
 
-✅ Variables and Fields
-camelCase
-Clear, descriptive names
+camelCase (starts with a lowercase letter, then capital letters for new words)
+
 Examples:
+
+displayMenuSosCredit, showMenuServiceYas
+
+✅ Variables
+
+camelCase
+
+Clear, descriptive names
+
+Examples:
+
 invalidChoice, page
 
 ✅ Packages
+
 lowercase, avoid underscores
+
 Use reverse-domain naming if applicable
+
 Examples:
+
 ussd.service,ussd.model
