@@ -13,7 +13,8 @@ public class MainMenuService {
     private final  RappelleMoiService rappelleMoiService = new RappelleMoiService();
 
 
-    public void showMenuYasEtMvola (int page) {
+    public void showMenuYasEtMvola () {
+        int page = 1;
         while (true) {
             if (page == 1) {
                 mainMenu.menuFirstPage();
@@ -52,10 +53,10 @@ public class MainMenuService {
                     else System.out.println("Option invalide sur cette page.");
                     break;
                 case "0":
-                    showMenuYasEtMvola(2);
+                    page=2;
                     break;
                 case "00":
-                    showMenuYasEtMvola(1);
+                    showMenuYasEtMvola();
                     break;
 
                 default:

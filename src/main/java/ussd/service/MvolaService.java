@@ -32,7 +32,13 @@ public class MvolaService {
             case "7" -> System.out.println("Vous avez choisi : Recevoir de l'argent");
             case "8" -> System.out.println("Vous avez choisi : Banques et Micro-Finances");
             case "*" -> displayMenuMvola(1);
-            case "**" -> new MainMenuService().showMenuYasEtMvola(1);
+            case "**" -> {
+                if (currentPage == 2) {
+                    new MainMenuService().showMenuYasEtMvola();
+                } else {
+                    displayMenuMvola(currentPage);
+                }
+            }
             default -> {
                 invalidChoice.invalidChoice();
                 displayMenuMvola(currentPage);
