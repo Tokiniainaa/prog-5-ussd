@@ -48,48 +48,41 @@ This project uses Checkstyle to enforce coding standards and ensure code consist
 
 📄 Checkstyle Configuration: A custom checkstyle.xml file is used to define the style rules, such as:
 
-Naming conventions
+Naming conventions , Javadoc presence , Indentation ,...
 
-Javadoc presence
-
-Indentation
-
-Method and class structure
-
-This configuration is based on the Google Java Style Guide (or Sun Style, depending on the setup).
+This configuration is based on the Google Java Style Guide.
 
 ### How to Run Checkstyle
-In IntelliJ IDEA:
-Go to Settings → Plugins, search for Checkstyle-IDEA, install it and restart IntelliJ.
+#### With Build Tools :
 
-### Configure the plugin:
-
-Go to Settings → Tools → Checkstyle
-
-Click + to add a new configuration
-
-Select your checkstyle.xml file
-
-Set it as the default configuration
-
-To run Checkstyle:
-
-Right-click on a file, package, or directory (e.g. src)
-
-Select: Checkstyle → Check Code with Checkstyle
-
-### With Build Tools (optional):
 If you're using a build tool, you can also run Checkstyle via command line:
 
 With Maven:
 
-`mvn checkstyle:check`
+```bash
+mvn checkstyle:check
+```
 
-With Gradle:
+📝 Note: Maven  must be installed and configured to use these commands.
 
-`./gradlew checkstyle`
+#### In IntelliJ IDEA:
+Go to Settings → Plugins, search for Checkstyle-IDEA, install it and restart IntelliJ.
 
-📝 Note: Maven or Gradle must be installed and configured to use these commands.
+### Configure the plugin:
+
+-Go to Settings → Tools → Checkstyle
+
+-Click + to add a new configuration
+
+-Select your checkstyle.xml file
+
+-Set it as the default configuration
+
+-To run Checkstyle:
+
+Right-click on a file
+
+Select: Checkstyle → Check Code with Checkstyle
 
 Any code style violations will be shown in the Checkstyle Results tool window with line numbers and rule names.
 
