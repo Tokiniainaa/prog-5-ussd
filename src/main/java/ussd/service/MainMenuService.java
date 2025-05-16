@@ -12,6 +12,8 @@ public class MainMenuService {
     private final MvolaService mvolaService = new MvolaService();
     private final  RappelleMoiService rappelleMoiService = new RappelleMoiService();
     private final SosCreditService sosCreditService = new SosCreditService();
+    private final ServiceYasService serviceYasService = new ServiceYasService();
+    private final PromotionService promotionService = new PromotionService();
 
 
     public void showMenuYasEtMvola () {
@@ -34,10 +36,10 @@ public class MainMenuService {
                     sosCreditService.displayMenuSosCredit();
                     break;
                 case "4":
-                    System.out.println("Accès aux services YAS...");
+                   serviceYasService.showMenuServiceYas();
                     break;
                 case "5":
-                    System.out.println("Promotions actuelles...");
+                    promotionService.displayMenuPromotion();
                     break;
                 case "6":
                     System.out.println("Produits et divertissement...");

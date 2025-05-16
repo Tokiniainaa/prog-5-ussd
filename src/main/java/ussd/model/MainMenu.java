@@ -16,7 +16,7 @@ public class MainMenu {
     public void nextPage(){
         System.out.println("8. Mon identite");
         System.out.println("9. Configurer mon mobile");
-        System.out.println("00. Retour à la page précédente");
+        System.out.println("00. Page précédente");
         System.out.print("Choisissez une option : ");
     }
 
